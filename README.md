@@ -5,31 +5,31 @@ Gracias por utilizar el programa "Conversor de tipo de Cambio"
 Al ejecutarse el programa aparece un menú con las distintas opciones de conversión de monedas enumeradas del 1 al 9, se le solicita al usuario que seleccionel tipo de cambio a convetir, por ejemplo la opción "1" será la conversión de dólares (USD) a pesos mexicancos (MXN):
 
 
+¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
 Bienvenido/a al Conversor de Tipo de Cambio :)
 
-1) Dólar =====>>> Peso Mexicano
-2) Peso Mexicano =====>>> Dólar
-3) Dólar =====>>> Peso Argentino
-4) Peso Argentino  =====>>> Dólar
-5) Dólar =====>>> Real Brasileño
-6) Real Brasileño =====>>> Dólar
-7) Dólar =====>>> Peso Colombiano
-8) Peso Colombiano =====>>> Dólar
+1) Dólar (USD) =====>>> Peso Mexicano (MXN)
+2) Peso Mexicano (MXN) =====>>> Dólar (USD)
+3) Dólar (USD) =====>>> Peso Argentino (ARS)
+4) Peso Argentino (ARS) =====>>> Dólar (USD)
+5) Dólar (USD) =====>>> Real Brasileño (BRL)
+6) Real Brasileño (BRL) =====>>> Dólar (USD)
+7) Dólar (USD) =====>>> Peso Colombiano (COP)
+8) Peso Colombiano (COP) =====>>> Dólar (USD)
 9) Salir
 
 Elija el número de opción deseada?
 ¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
-
 1
 
 A continuación se solicita la cantidad de dólares (USD) a convertir a pesos mexicancos (MXN), por ejemplo, convertir "1000 USD" a pesos mexicanos (MXN):
 
-Ingrese la cantidad de Dólares USD a convertir a Pesos MX: 
+Ingrese la cantidad de Dólares USD a convertir a Pesos MX:
 1000
 
 El programa mostrará la conversión del monto en Dólares USD a Pesos MX así como hora y fecha de consulta:
 
-El valor de 1000.0 USD corresponde a >>>>>>  18731.9 MXN al día de hoy 19/07/2025 a las 21:50:56 hora
+El valor de 1000.0 USD corresponde a >>>>>>  18730.3 MXN al día de hoy 21/07/2025 a las 14:55:43 horas
 
 Si el usuario ingresa en el menú del Conversor un valor numérico distinto del menú de conversión (Distinto de 1 a 9), por ejemplo "200", aparecerá un mensaje "Opción inválida. Por favor, elija una opción válida.":
 
