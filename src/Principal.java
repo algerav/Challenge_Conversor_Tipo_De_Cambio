@@ -91,16 +91,23 @@ public class Principal {
 
 
 
-                TipoDeCambio cambio = consulta.buscaTipoDeCambio(base, target, montoAConvertir);
+                TipoDeCambio cambio = consulta.buscaTipoDeCambio(base, target, montoAConvertir); //Se crea una instancia de la clase "TipoDeCambio" llamado "cambio" que llama
+                                                                                                // al metodo "buscaTipoDeCambio" de la clase "Consulta
+                                                                                                //Los parámetros base, target y montoAConvertir serán utilizadas
+                                                                                                // del tipo de cambio por la URI de exchangerate-api.com
                 System.out.println("    ");
-                LocalDate fecha_consulta = LocalDate.now();
-                LocalTime hora_consulta = LocalTime.now();
+                LocalDate fecha_consulta = LocalDate.now();  //fecha_consulta es la fecha de consulta y es instancia de java.time
+                LocalTime hora_consulta = LocalTime.now();   //hora_consulta es la hora de consulta y es instancia de java.time
+                //Se imprimen los parámetros montoAConvertir, base_code(), target_code() así como fecha_consulta y hora_consulta
                 System.out.println("El valor de "+ montoAConvertir + " "+cambio.base_code()+" corresponde a >>>>>>  "+cambio.conversion_result()+" "+cambio.target_code()+" al día de hoy "+ fecha_consulta.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"))+" a las "+hora_consulta.format(DateTimeFormatter.ofPattern("HH:mm:ss"))+" horas" );
                 System.out.println("   ");
 
-                GeneradorArchivo generador = new GeneradorArchivo();
-                generador.guardarJson(cambio);
+                GeneradorArchivo generador = new GeneradorArchivo(); //Se crea una instancia de la clase "GeneradorArchivos" archivos llamada "generador" que utiliza la librería "GSON"
+                                                                     //la cual nos permitirá guardar los parámetros consultados en formato "json"
+                generador.guardarJson(cambio); //Genera un archivo con extensión Json con los parámetros de consulta
 
+                //Si la información ingresada en inválida las excepciones NumberFormatException, RuntimeException y IOException enviarán los siguientes mensajes
+                //al usuario, solicitando ingresar información válida
             } catch (NumberFormatException e) {
                 System.out.println("La información ingresada no es un número " + e.getMessage());
                 System.out.println("Favor de ingresar un opción válida");
