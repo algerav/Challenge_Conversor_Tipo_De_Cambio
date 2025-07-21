@@ -49,12 +49,24 @@ Favor de ingresar un opción válida
 
 Sí desea salir de programa oprimir "9"
 
-Por cada conversión de tipo de cambio se generará un archivo jason con el nombre de la conversión  de monedas que contiene los parámetros y valores de la API utilizados, según sea la conversión de monedas, en este ejemplo de peso argentino (ARS) a dolar (USD):
+Por cada conversión de tipo de cambio se generará un archivo jason con el nombre de la conversión  de monedas que contiene los parámetros y valores de la API utilizados, según sea la conversión de monedas, en este ejemplo de peso argentino (ARS) a dolar (USD), el nombre del archivo sería, ARS-USD.json
+
+Nota_ Para los parámetros de consulta y desplegado se extrajeron de la exchangerate-api el json correpondiente, ejemplo:
+
+Mi api-key asiganda fue "00ea0ba48fa95c26188b5953"
+https://v6.exchangerate-api.com/v6/00ea0ba48fa95c26188b5953/pair/ARS/USD/10000
 
 {
-  "base_code": "ARS",
-  "target_code": "USD",
-  "conversion_rate": 7.7892E-4,
-  "conversion_result": 934.704
+    "result": "success",
+    "documentation": "https://www.exchangerate-api.com/docs",
+    "terms_of_use": "https://www.exchangerate-api.com/terms",
+    "time_last_update_unix": 1753056001,
+    "time_last_update_utc": "Mon, 21 Jul 2025 00:00:01 +0000",
+    "time_next_update_unix": 1753142401,
+    "time_next_update_utc": "Tue, 22 Jul 2025 00:00:01 +0000",
+    "base_code": "ARS",
+    "target_code": "USD",
+    "conversion_rate": 0.00077892,
+    "conversion_result": 7.7892
 }
 
